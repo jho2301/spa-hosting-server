@@ -9,6 +9,6 @@ app.get("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "/dist/index.html"));
 });
 
-app.listen(5000, () => {
-  console.log("serve on http://localhost:5000");
+app.listen(process.env.PORT, () => {
+  console.log(`serve on http://localhost:${process.env.PORT}`);
 });
