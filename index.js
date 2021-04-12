@@ -1,5 +1,8 @@
 import express from "express";
 import path from "path";
+import dotenv from "dotenv";
+
+dotenv.config(); // 헤로쿠 올릴 땐 제거
 
 const app = express();
 
